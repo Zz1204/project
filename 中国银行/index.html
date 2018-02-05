@@ -23,12 +23,25 @@
         </div>
         <header>
             <div class="header-top">
-                <h1 class="logo"></h1>
-                <div class="call"></div>
+                <h1 class="logo">
+                    <a href="#"></a>
+                </h1>
+                <div class="call">
+                    <p class="call-p">
+                        服务热线：<span>95566</span>
+                        信用卡热线：<span>40066 95566</span>
+                    </p>
+                    <form class="" action="index.html" method="post">
+                        <div class="search">
+                            <input type="text" name="" value="" placeholder="请输入检索关键词">
+                            <button></button>
+                        </div>
+                    </form>
+                </div>
             </div>
             <nav>
                 <ul class="nav-body">
-                    <li class="nav-li"><a href="">首页</a></li>
+                    <li class="nav-li"><a href="" style="color:#a71e32">首页</a></li>
                     <li class="nav-li"><a href="">公司金融</a></li>
                     <li class="nav-li"><a href="">个人金融</a></li>
                     <li class="nav-li"><a href="">银行卡</a></li>
@@ -39,6 +52,32 @@
                 </ul>
             </nav>
         </header>
+        <article class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="img/banner-1.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="img/banner-2.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="img/banner-3.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="img/banner-4.jpg" alt=""></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </article>
+        <script src="js/swiper.min.js"></script>
+        <script type="text/javascript">
+            var mySwiper=new Swiper(".swiper-container",{
+                spaceBetween: 2000,
+                centeredSlides: true,
+                autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+                },
+                onlyExternal:true,
+                effect:"fade",
+                pagination: {
+                   el: '.swiper-pagination',
+                   clickable: true,
+                 },
+            })
+        </script>
     </div>
 </body>
 </html>

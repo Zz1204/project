@@ -91,3 +91,95 @@ body .body-wrap header {
   box-shadow: 0 2px 6px #eee;
   background: #fff;
 }
+body .body-wrap header .header-top {
+  border-bottom: 3px solid #a71e32;
+  overflow: hidden;
+}
+body .body-wrap header .header-top .logo {
+  float: left;
+  width: 175px;
+  height: 49px;
+  display: inline;
+  margin: 23px 0 0px 0;
+  padding-bottom: 19px;
+}
+body .body-wrap header .header-top .logo a {
+  display: block;
+  width: 175px;
+  height: 49px;
+  background: url(../img/boc2013_logo.png) no-repeat;
+}
+body .body-wrap header .header-top .call {
+  float: right;
+  height: 29px;
+  margin-top: 46px;
+  font-size: 13px;
+  width: 580px;
+  margin-right: 15px;
+}
+body .body-wrap header .header-top .call .call-p {
+  background-position: 0 4px;
+  float: left;
+  line-height: 29px;
+  margin: 0px;
+  color: #535353;
+  padding-left: 26px;
+  background: url(../img/boc2013_top_icon.png) no-repeat 0 4px;
+}
+body .body-wrap header .header-top .call .call-p span {
+  color: #a71e32;
+  padding-right: 18px;
+}
+body .body-wrap header .header-top .call form .search {
+  width: 218px;
+  height: 27px;
+  border: 1px solid #dadada;
+  border-radius: 3px;
+  float: right;
+}
+body .body-wrap header .header-top .call form .search input {
+  width: 186px;
+  border: 0;
+  height: 27px;
+  vertical-align: middle;
+  background: none;
+  margin: 0;
+  padding: 0 0 0 4px;
+  float: left;
+}
+body .body-wrap header .header-top .call form .search button {
+  background: url(../img/boc2013_search1.png) no-repeat center 5px;
+  width: 28px;
+  height: 27px;
+  border: 0;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+body .body-wrap header nav {
+  height: 58px;
+  line-height: 58px;
+  font-size: 16px;
+  color: #000;
+  clear: both;
+}
+body .body-wrap header nav ul li {
+  float: left;
+  width: 12.5%;
+  text-align: center;
+}
+body .body-wrap header nav ul li a {
+  display: block;
+  color: #000000;
+  height: 42px;
+  margin-top: 16px;
+  line-height: 25px;
+}
+body .body-wrap .swiper-container {
+  margin-top: 15px;
+  background: #fff;
+  border: 1px solid #dadada;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px #e5e5e5;
+  margin: 10px 0;
+}
