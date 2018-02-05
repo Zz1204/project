@@ -1,0 +1,93 @@
+/*清格式*/
+body,
+div,
+p,
+ul,
+li,
+ol,
+dl,
+dt,
+dd,
+img,
+input,
+button,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span {
+  padding: 0;
+  margin: 0;
+}
+img {
+  border: none;
+  vertical-align: middle;
+}
+ul,
+li,
+ol,
+dl,
+dt,
+dd {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+body {
+  background: #f2f2f2;
+  font: 12px/26px Verdana, Geneva, sans-serif, "宋体";
+  color: #535353;
+}
+body .body-wrap {
+  width: 980px;
+  margin: 0 auto;
+}
+body .body-wrap .body-top {
+  line-height: 34px;
+}
+body .body-wrap .body-top a {
+  color: #535353;
+}
+body .body-wrap .body-top a:hover {
+  color: #ff6633;
+}
+body .body-wrap .body-top .left {
+  float: left;
+}
+body .body-wrap .body-top .left a {
+  margin-left: 18px;
+}
+body .body-wrap .body-top .right {
+  float: right;
+}
+body .body-wrap .body-top .right p {
+  float: left;
+  padding-left: 26px;
+  margin-left: 21px;
+  background: url(../img/boc2013_top_icon.png) no-repeat;
+}
+body .body-wrap .body-top .right p:nth-of-type(1) {
+  background-position: 0 -92px;
+}
+body .body-wrap .body-top .right p:nth-last-of-type(1) {
+  margin-right: 21px;
+  background-position: 0 -133px;
+}
+body .body-wrap .body-top::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+body .body-wrap header {
+  box-sizing: border-box;
+  padding: 0 18px;
+  width: 980px;
+  height: 154px;
+  border: 1px solid #dadada;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px #eee;
+  background: #fff;
+}

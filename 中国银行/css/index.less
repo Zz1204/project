@@ -1,0 +1,72 @@
+/*清格式*/
+body,div,p,ul,li,ol,dl,dt,dd,img,input,button,h1,h2,h3,h4,h5,h6,span{
+	padding: 0;
+	margin: 0;
+}
+img{
+	border: none;
+	vertical-align: middle;
+}
+ul,li,ol,dl,dt,dd{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+
+body{
+	background: #f2f2f2;
+    font: 12px/26px Verdana,Geneva,sans-serif,"宋体";
+    color: #535353;
+    .body-wrap{
+        width: 980px;
+        margin: 0 auto;
+        .body-top{
+            line-height: 34px;
+            a{
+                color: #535353;
+            }
+            a:hover{
+                color: #ff6633;
+            }
+            .left{
+                float: left;
+                a{
+                    margin-left: 18px;
+                }
+            }
+            .right{
+                float: right;
+                p{
+                    float: left;
+                    padding-left: 26px;
+                    margin-left: 21px;
+                    background: url(../img/boc2013_top_icon.png) no-repeat;
+                }
+                p:nth-of-type(1){
+                    background-position: 0 -92px;
+                }
+                p:nth-last-of-type(1){
+                    margin-right: 21px;
+                    background-position: 0 -133px;
+                }
+            }
+        }
+        .body-top::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        header{
+            box-sizing: border-box;
+            padding: 0 18px;
+            width: 980px;
+            height: 154px;
+            border: 1px solid #dadada;
+            border-radius: 5px;
+            box-shadow: 0 2px 6px #eee;
+            background: #fff;
+        }
+
+    }
+}
