@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <button>获取刚才注入的数据</button>
+    <p id="username"></p>
+    <p id="pass"></p>
+</body>
+<script src="jquery-3.2.1.min.js"></script>
+<script>
+    $('button').click(function () {
+        $.ajax({
+            type:'get',
+            url:'/ajax',
+            async:true,
+            success:function (data) {
+                console.log(typeof data)
+                $('#username').html(data.username);
+                $('#pass').html(data.pass);
+            },
+            error:function (err) {
+                console.log(err);
+            }
+        })
+    })
+</script>
+</html>
