@@ -1,0 +1,48 @@
+mongodb  启动： net start mongodb
+         停止： net stop mongodb
+         注意：你只要开启了MongoDB，他就一直运行着
+
+1、如何进入MongoDB的客户端：mongo
+启动CMD是用管理员的身份进入
+2、MongoDB区别于MySQL：
+   MySQL  关系类型的数据库  数据库->数据表->行和列
+   MongoDB  非关系类型的数据库    数据库->集合->(bson)    大量类似于json格式
+3、指令
+    查看mongodb数据库：show dbs      (databases);
+    创建/使用：use 数据库名称
+        刚开始的时候里面没有内容  用show dbs查看不到
+        如果想要查看到    就要从这下面创建集合
+    创建集合：db.createCollection('集合名称')   就会显示刚才创建的数据库   驼峰命名
+    查看当前你使用的是哪个数据库：db
+    删除数据库：db.dropDatabase()
+
+    关于集合的操作：
+        创建集合：db.createCollection('集合名称')
+        数据库下面也已有多个数据库
+            查看数据库中的集合：show tables/collection
+            删除集合：db.集合名称.drop()
+
+        ***** AAAAA
+        增：db.集合名称.insert({key:value})
+            假设我们没有创建集合   db.ten.insert({name:"syx"})  将会创建
+        删：
+            全部删除：db.集合名称.remove({})
+            指定某个属性删除
+        改：db.集合名称.update({条件},{$set:{修改内容}},true,true)
+            第三个参数和第四个参数   默认是false
+            第三个参数  true  条件没有找到  执行添加操作
+            第四个参数  true  如果条件匹配多个的话，就会进行批量修改
+        查：db.集合名称.find()
+        格式化：db.集合名称.find().pretty()
+
+
+        带符号的查询   db.集合名称.find()  查看集合下面所有的数据
+        条件查询       db.集合名称.find({key:value});
+
+
+
+        <：$lt;
+        >：$gt;
+        !=：$ne;
+        <=：$lte;
+        >=：$gte;

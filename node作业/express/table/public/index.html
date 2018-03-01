@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="javascripts/jquery-3.2.1.min.js"></script>
+    <style>
+        td{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to express</h1>
+    <p><button>获取信息</button></p>
+    <table width="650px" border="1">
+        <tr>
+            <th width="200px">姓名</th>
+            <th>年龄</th>
+            <th>学号</th>
+        </tr>
+    </table>
+    <script>
+       // $('button').click(function(){
+           $.ajax({
+               type:'post',
+               url:'/login',
+               success:function (data) {
+                    data.forEach(function (item) {
+                        // console.log(item.name)
+                        var $tr=$('<tr></tr>');
+                        var $td1=$('<td></td>');
+                        var $td2=$('<td></td>');
+                        var $td3=$('<td></td>');
+                        $td1.html(item.name);
+                        $td2.html(item.age);
+                        $td3.html(item.num);
+                        $tr.append($td1,$td2,$td3);
+                        $tr.appendTo($('table'));
+                    })
+               }
+           })
+       // })
+    </script>
+</body>
+</html>
